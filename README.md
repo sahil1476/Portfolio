@@ -13,7 +13,7 @@ Welcome to my portfolio! This repository showcases various aspects of my work, i
 
 ## About Me
 
-Hi, I'm Sahil Sharma, a passionate web developer and data analyst with a background in Computer Science and Engineering. I have experience in both frontend and backend development, and I enjoy creating intuitive and efficient web applications. You can find more about me on my [LinkedIn profile](https://www.linkedin.com/in/sahil-sharma/).
+Hi, I'm Sahil Sharma, a passionate web developer and data analyst with a background in Computer Science and Engineering. I have experience in both frontend and backend development, and I enjoy creating intuitive and efficient web applications. You can find more about me on my [LinkedIn profile](https://www.linkedin.com/in/sahil-sharma-34989519a/).
 
 ## Education
 
