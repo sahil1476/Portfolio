@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -368,3 +368,466 @@
      
 </body>
 </html>
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Sharma - Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#686D76;
+        }
+        body:hover{
+            background-color: #4e4944;
+        }
+        
+        .parallax {
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/435/542/549/javascript-google-node-js-html-microsoft-visual-studio-hd-wallpaper-preview.jpg');
+            height: 300px;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-top: 0%;
+            transition: background-color 0.5s ease-in-out;
+            margin-bottom: 5px;
+            }
+        .parallax:hover{
+            filter: blur(0.5);
+        }
+        .container {
+            max-width: 90%;
+            margin: auto;
+            margin-top: 10px;
+            padding: 20px;
+            background-color: #F8F4E1;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            border-radius: 10px;
+        }
+        .container:hover{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            border-radius: 10px;
+            transition: box-shadow 0.3s;
+            background-color: #efe6bc;
+            transition: background-color 0.3s;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .contact h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 132px;
+        }
+        .contact, .education, .experience, .responsibilities, .trainings, .projects, .skills, .links {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+        .footer {
+            background-color: #131842;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            
+        }
+        .footer:hover{
+            transform: scale(1.053689);
+        }
+        .footer p{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+        }
+        .footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #007BFF;
+        }
+        .footer .icons img {
+            width: 34px;
+            height: 34px;
+            vertical-align: middle;
+            transition: transform 0.3s;
+            margin-bottom: 10px;
+        }
+        .footer .icons img:hover {
+            transform: scale(2);
+        }
+        .name{
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #FFC96F;
+            border-radius: 10px;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            padding: 10px;
+        }
+        .name:hover{
+            background-color: #FFA62F;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            transition: background-color 0.3s;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            
+        }
+        .header .name {
+            flex: 1;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-left: 20px;
+            box-shadow: rgba(93, 93, 219, 0.25) 0px 50px 100px -20px, rgba(23, 84, 224, 0.3) 0px 30px 60px -30px, rgba(20, 123, 227, 0.35) 0px -2px 6px 0px inset;
+            transition: box-shadow 0.3s;
+        }
+        .header img:hover {
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            transform: scale3d(1.2,1.2,1.2 );
+            transition: box-shadow 0.3s;
+            transition: ease-in-out linear 2s ;
+        }
+       .tech-skill{
+        display: flex;
+            flex-wrap: wrap;
+            
+            margin-bottom: 20px;
+            margin: 0;
+            padding: 10px;
+            min-height: fit-content;
+            min-width: fit-content;
+            background-color: #131842;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+            
+       } 
+       .main-content {
+        margin-left: 220px;
+        padding: 20px;
+        box-sizing: border-box;
+        max-width: calc(100% - 240px);
+    }
+       .left-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 10%;
+        height: 100%;
+        background-color: #A02334;
+        color: white;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.647) 3px 3px 6px, rgba(0, 0, 0, 0.477) 3px 3px 6px;
+        margin-right: 20px;
+        min-width: 100px;
+        animation: rgbShadow 5s infinite;
+        transition: margin-right 0.5s ease;
+    }
+    @keyframes rgbShadow {
+        0% {
+            box-shadow: 0 0 15px rgba(72, 255, 0, 0.5);
+        }
+        33% {
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+        }
+        55%{
+            box-shadow: 0 0 15px rgba(35, 193, 153, 0.579);
+        }
+        66% {
+            box-shadow: 0 0 15px rgba(113, 113, 236, 0.711);
+        }
+        88% {
+            box-shadow: 0 0 15px rgba(255, 255, 0, 0.655);
+        }
+        100% {
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+        }
+    }
+    .left-menu h1{
+        font-size: 34px;
+        margin-bottom: 40px;
+        color: #007BFF;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: #f8f4e1e8 1.3px 1px ; 
+        margin-right: 20px;
+    }
+    .left-menu a {
+        color: white;
+        font-size:x-large;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-decoration: none;
+        display: block;
+        margin: 10px 0;
+        height: 7%;
+        width: 100%;
+        background-color: #FFAD60;
+        border-radius: 40px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        box-shadow: rgba(50, 50, 93, 0.55) 0px 50px 100px -20px, rgba(0, 0, 0, 0.43) 0px 30px 60px -30px, rgba(6, 78, 149, 0.435) 0px -2px 6px 0px inset;
+}
+    .left-menu a:hover {
+        background-color: #b97837;
+        transition: background-color 0.3s;
+    }
+
+   
+    </style>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+</head>
+<body>
+    <div class="left-menu">
+        <h1>Sahil Sharma</h1>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="parallax"></div>
+    <div class="main-content">
+    <div class="container">
+        <div class="tech-skill">
+            <md-block>
+                ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white) ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white) ![Apache Spark](https://img.shields.io/badge/Apache%20Spark-FDEE21?style=for-the-badge&logo=apachespark&logoColor=black) ![Apache Hadoop](https://img.shields.io/badge/Apache%20Hadoop-66CCFF?style=for-the-badge&logo=apachehadoop&logoColor=black) ![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka) ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![Web3.js](https://img.shields.io/badge/web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+            </md-block>           
+        </div>
+
+<section id="about">
+
+        <div class="header">
+            
+            
+             <div class="name">
+                  <h1>Sahil Sharma</h1>
+                  <p>Email: <a href="mailto:krsahilsharma07@gmail.com">krsahilsharma07@gmail.com</a></p>
+                  <p>Phone: +91 9015034738</p>
+                  <p>Location: Chandigarh</p>
+             </div>
+           <img src="https://media.licdn.com/dms/image/D5635AQHkcCWFsW9AYQ/profile-framedphoto-shrink_400_400/0/1722088327470?e=1723449600&v=beta&t=OINCeNIZ6UPwHLjE8ZKoWa-TyTZpW_ddmuuZdfk0eH8" alt="Sahil Sharma">
+
+        </div>
+        
+        <div class="education">
+            <h2>Education</h2>
+            <p><strong>B.Tech, Computer Science & Engineering</strong></p>
+            <p>Lovely Professional University (2020 - 2024)</p>
+            <p><strong>Senior Secondary Education (CBSE) Non-Medical</strong></p>
+            <p>J. N. V. BILASPUR H.P. 2018 - 2019</p>
+        </div>
+</section>
+
+        <div class="experience">
+            <h2>Work Experience</h2>
+            <p><strong>Associate Software Engineer Trainee</strong></p>
+            <p>Xenonstack, Mohali (Jan 2024 - Jun 2024)</p>
+            <ul>
+                <li>Developed a Library Management System using Golang for backend services and React for frontend interface.</li>
+                <li>Implemented workflows with Apache Spark, Apache Kafka.</li>
+                <li>Performed testing on XenonStack website using Selenium and Cucumber framework.</li>
+            </ul>
+        </div>
+
+        <div class="responsibilities">
+            <h2>Positions of Responsibility and Extra Curricular</h2>
+            <ol>
+                <li>Class Monitor in My School Days (2 years)</li>
+                <li>House Captain of Senior Boys House in my Hostel (1 year)</li>
+                <li>Part of Art and Craft Club (J. N. V. Bilaspur)</li>
+            </ol>
+            <ol>
+                <li>Sports</li>
+                <li>Art and Drawing ( Won section of the year in 2020 )</li>
+                <li>Volunteering</li>
+            </ol>
+        </div>
+
+        <div class="trainings">
+            <h2>Trainings</h2>
+            <p><strong>Full Stack Web Development</strong></p>
+            <p>Udemy, Online (Mar 2023 - Jul 2024)</p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>, <a href="https://nodejs.org/en/docs/">Node</a>, <a href="https://reactjs.org/docs/getting-started.html">React</a>, <a href="https://www.postgresql.org/docs/">PostgreSQL</a></p>
+            <a href="https://www.udemy.com/share/1013gG3@MVxTfKZt3tdJFyqk4SoJpPguIAiaIAVtVjAL8iRW2iKyL5merO4CVCLgTJ7F88zJ4A==/" class="button">Course Link</a>
+        </div>
+<section id="projects">
+        <div class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Note-Taking-App</strong> (Jul 2024)
+                    <br>
+                    <a href="https://notes-aplicationn.netlify.app/" class="button">View Project</a>
+                    <p>The app allows users to create, view, edit, delete, and search notes. The notes are stored in the browser's local storage.</p>
+                    <p>Frontend: <a href="https://reactjs.org/docs/getting-started.html">React.js</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a><br>
+                        State Management: React Hooks<br>
+                        Data Storage: Browser Local Storage</p>
+                    <p>
+                        <ol>CRUD Operations: Implemented comprehensive Create, Read, Update, and Delete functionalities for managing notes.</ol><br>
+                        <ol>Pagination: Developed a pagination system to display 10 notes per page, enhancing user navigation.</ol><br>
+                        <ol>Search Functionality: Integrated a search feature to filter notes by title or content, improving user experience.</ol><br>
+                        <ol>Timestamps: Added timestamp functionality to record and display the creation or last modification time for each note.</ol><br>
+                        <ol>Responsive Design: Ensured the application is fully responsive and mobile-friendly.</ol><br>
+                        <ol>Optimized app performance through efficient rendering and code quality maintenance.</ol><br>
+                        <ol>Gained hands-on experience with React.js and strengthened understanding of frontend development best practices.</ol><br>
+                    </p>
+                </li>
+                <li>
+                    <strong>Secret Sharing Project</strong> (Jun 2024 - Jul 2024)
+                    <br>
+                    <a href="https://github.com/sahil1476/Secret-Project" class="button">View Project</a>
+                    <p><a href="https://nodejs.org/en/docs/">Node.js</a> | <a href="https://expressjs.com/">Express</a> | <a href="https://www.postgresql.org/docs/">Postgres</a> | <a href="https://developers.google.com/identity/protocols/oauth2">Google OAuth</a> | <a href="https://ejs.co/">EJS</a><br><br>
+                        <ol>Developed user authentication system with registration and login functionalities.</ol><br>
+                        <ol>Implemented backend using Node.js and Express.js.</ol><br>
+                        <ol>Utilized PostgreSQL as the database for storing user information securely.</ol><br>
+                        <ol>Designed front-end pages using EJS templating engine.</ol><br>
+                        <ol>Integrated Google Auth for seamless user registration and login.</ol><br>
+                        <ol>Employed Passport.js for authentication, ensuring robust security measures.</ol><br>
+                        <ol>Created and managed GET, POST, and PUT routes in APIs for efficient data handling.</ol><br>
+                    </p>
+                </li>
+                <li>
+                    <strong>LIBRARY MANAGEMENT SYSTEM</strong> (Mar 2024 - May 2024)
+                    <br>
+                    <a href="https://github.com/sahil1476/LIbrary_management" class="button">View Code</a>
+                    <p><a href="https://golang.org/doc/">Golang</a> (Backend), <a href="https://reactjs.org/docs/getting-started.html">React</a> (Frontend), <a href="https://gorm.io/docs/">GORM</a> (Database)<br><br>
+                        <ol>Designed and implemented RESTful APIs for comprehensive book management operations, including AddBook, UpdateBook, DeleteBook, IssueBook, and SearchBook.</ol><br>
+                        <ol>Ensured efficient and secure handling of CRUD operations (using AXIOS), facilitating seamless interactions between the frontend and backend.</ol><br>
+                        <ol>Implemented GORM (Golang ORM) for efficient database management, enabling smooth data transactions and complex queries.</ol><br>
+                        <ol>Improved the user experience by designing a clean, navigable, and efficient frontend interface, facilitating easy access to book management features.</ol><br>
+                        <ol>Successfully developed and deployed a full-stack web application that streamlined book management operations, improving efficiency by 40%.</ol><br>
+                    </p>
+                </li>
+                <li>
+                    <strong>A Demo Website | HTML | CSS</strong> (Dec 2023)
+                    <br>
+                    <a href="https://xenonassignment.vercel.app/index.html" class="button">View Project</a>
+                    <p>A demo website with a home page, login page, sign-up page, and contact us page made with <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>.</p>
+                </li>
+                <li>
+                    <strong>Arm Fit India | Made with HTML/CSS</strong> (Oct 2023 - Dec 2023)
+                    <br>
+                    <a href="https://sahil1476.github.io/Arm-FitIndia/" class="button">View Project</a>
+                    <p>A demo site for a course project offering gym and arm equipment for gyms and players.</p>
+                    <p>
+                        <ol>Increased user convenience with a responsive design that ensures a seamless experience across various devices, including desktops, tablets, and smartphones.</ol><br>
+                        <ol>Developed and integrated multiple modules including Home Page, Product Pages, About Us, Contact Us, and Navigation Bar.</ol><br>
+                        <ol>Utilized CSS for styling and JavaScript for dynamic content, creating interactive and visually appealing web pages.</ol>
+                    </p>
+                </li>
+            </ul>
+        </div>
+</section>
+<section id="skills">
+        <div class="skills">
+            <h2>LANGUAGES</h2>
+            <ol>
+                <li>English - Advance</li>
+                <li>Hindi - Native</li>
+                <li>Punjabi - Advance</li>
+            </ol>
+            <h2>Tech Skills</h2>
+            <ol>
+                <li><a href="https://nodejs.org/en/docs/">Node.js</a> (Intermediate)</li>
+                <li><a href="https://expressjs.com/">Express.js</a> (Intermediate)</li>
+                <li><a href="https://en.wikipedia.org/wiki/API">APIs</a> (Beginner)</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> (Intermediate)</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> (Intermediate)</li>
+                <li><a href="https://reactjs.org/docs/getting-started.html">React</a> (Intermediate)</li>
+                <li><a href="https://reactjs.org/docs/getting-started.html">ReactJS</a> (Intermediate)</li>
+                <li><a href="https://www.postgresql.org/docs/">PostgreSQL</a> (Intermediate)</li>
+                <li><a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST API</a> (Beginner)</li>
+                <li><a href="https://git-scm.com/doc">Git</a> (Beginner)</li>
+                <li><a href="https://www.postman.com/">Postman</a> (Beginner)</li>
+            </ol>
+            <h2>Soft Skills</h2>
+            <ol>
+                <li>Strategic Planning & Analysis</li>
+                <li>Time Management</li>
+                <li>Leadership, Teamwork</li>
+                <li>Collaboration, Adaptable</li>
+                <li>Effective Communication</li>
+                <li>Attention to detail</li>
+                <li>Problem solving</li>
+            </ol>
+        </div>
+</section>
+<section id="contact">
+    <div class="footer">
+        <p>Connect with me:</p>
+        <div class="icons">
+            <a href="https://github.com/sahil1476"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/sahil-sharma-34989519a/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/ssahilsharma_/"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+            <a href="https://medium.com/@krsahilsharma07"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111543.png" alt="Medium"></a>
+            <a href="mailto:krsahilsharma07@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail"></a>
+        </div>
+    </div>
+</section> 
+    </div>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
